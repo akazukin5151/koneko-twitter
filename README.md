@@ -2,6 +2,8 @@
 
 A minimal example of how [koneko](https://github.com/twenty5151/koneko) can be modified for other purposes. Here, twitter is used as an example.
 
+![preview](preview.png)
+
 A diff file is automatically generated for convenience as [patch.diff](patch.diff).
 
 # Installation
