@@ -9,7 +9,8 @@ A diff file is automatically generated for convenience as [patch.diff](patch.dif
 # Installation
 
 ```sh
-#git clone
+git clone https://github.com/twenty5151/koneko-twitter.git
+cd koneko-twitter
 ./patcher.sh
 cd build/koneko
 python setup.py develop
