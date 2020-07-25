@@ -28,3 +28,10 @@ Run with `koneko_twitter`, enter `1` and a twitter username. Pages aren't suppor
 
 Finally, you should run `./patcher.sh -c` for a clean build plus patch. A diff file will also be generated.
 
+# License notes
+
+While this repo (koneko-twitter) is licensed under the Mozilla Public License, the base koneko repo (used here by the patcher) is still licensed under GPLv3. Any direct changes to koneko (ie, `build/koneko/`), even if the repo was cloned by the patcher script, still falls under the GPL. Does changes made by the patcher trigger the GPL? Not a lawyer, but I think if your patches (licensed under MPL) is not standalone ("combined in a way that would make them effectively a single program"), then the GPL kicks in. So you can't use this MPL-licensed repo to circumvent the GPL, by making MPL-licensed-patches to a GPL-program.
+
+**TLDR:** Everything that is initially cloned by you, such as the modified python files and the patcher script, is licensed under the MPL. The `koneko` repo that the patcher clones (when you run the patcher), is licensed under the GPL. Finally, I think you cannot make a completely new app based on koneko by using patches licensed under the MPL -- it must be released under GPLv3. 
+
+
