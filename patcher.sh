@@ -7,6 +7,8 @@ git clone https://github.com/twenty5151/koneko.git
 cp ../*.py koneko/koneko
 rm koneko/setup.py
 mv koneko/koneko/setup.py koneko/
+rm koneko/requirements.txt
+mv koneko/koneko/requirements.txt koneko/
 
 # For reference, doesn't include koneko -> koneko-twitter search and replace
 cd koneko

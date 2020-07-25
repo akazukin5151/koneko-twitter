@@ -347,10 +347,10 @@ index f455ced..41bcefd 100644
      def handle_prompt(self, keyseqs):
          """Implements abstractmethod"""
 diff --git a/setup.py b/setup.py
-index b5010b0..7ad32d1 100644
+index b5010b0..36221c8 100644
 --- a/setup.py
 +++ b/setup.py
-@@ -9,9 +9,9 @@ README = (HERE / 'README.md').read_text()
+@@ -9,14 +9,14 @@ README = (HERE / 'README.md').read_text()
  
  # Create the cache dir
  # The pythonic way is so unnecessarily complicated for two lines of shell...
@@ -363,3 +363,17 @@ index b5010b0..7ad32d1 100644
  
  setup(
      name='koneko',
+     version='0.10.0',
+-    description='Browse pixiv in the terminal',
++    description='Browse twitter in the terminal',
+     long_description=README,
+     long_description_content_type='text/markdown',
+     url='https://github.com/twenty5151/koneko',
+@@ -32,6 +32,7 @@ setup(
+     packages=['koneko'],
+     include_package_data=True,
+     install_requires=[
++        'twitter_scraper~=0.4',
+         'PixivPy~=3.5',
+         'pixcat~=0.1',
+         'docopt~=0.6',
